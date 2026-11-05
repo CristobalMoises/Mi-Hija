@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Te quiero, hija - Mi Álbum de Recuerdos</title>
+    <title>¿Quieres ser mi novia? - Mi Álbum de Recuerdos</title>
     <!-- Fuentes para títulos y notas manuscritas -->
     <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600&family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
     
@@ -16,7 +16,7 @@
 
         body {
             font-family: 'Montserrat', sans-serif;
-            /* Fondo simulando la mesa de madera de la imagen */
+            /* Fondo simulando la mesa de madera */
             background: radial-gradient(circle, #e2cca6 0%, #ba986e 100%),
                         repeating-linear-gradient(0deg, transparent, transparent 10px, rgba(0,0,0,0.03) 10px, rgba(0,0,0,0.03) 20px);
             background-blend-mode: multiply;
@@ -70,7 +70,7 @@
             min-height: 600px;
             position: relative;
             background-image: linear-gradient(#f4ebd9 1px, transparent 1px);
-            background-size: 100% 32px; /* Red sutil de renglones/textura */
+            background-size: 100% 32px;
         }
 
         .page-left {
@@ -161,7 +161,7 @@
             z-index: 5;
         }
 
-        /* Ligeras inclinaciones naturales como en la foto de referencia */
+        /* Ligeras inclinaciones naturales */
         .photo-item:nth-child(3n+1) { transform: rotate(-1.5deg); }
         .photo-item:nth-child(3n+2) { transform: rotate(1deg); }
         .photo-item:nth-child(3n) { transform: rotate(-0.5deg); }
@@ -182,13 +182,45 @@
             line-height: 1.1;
         }
 
-        /* Pie de página */
+        /* Pie de página con imagen final y texto superpuesto */
         footer {
             text-align: center;
-            padding: 30px 20px 10px;
-            color: #4a341e;
+            padding: 50px 20px 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .final-photo-container {
+            position: relative;
+            max-width: 500px;
+            width: 100%;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 15px 30px rgba(0,0,0,0.3);
+            border: 5px solid #ffffff;
+        }
+
+        .final-photo-container img {
+            width: 100%;
+            height: auto;
+            display: block;
+            filter: brightness(0.65); /* Oscurece ligeramente la imagen para dar legibilidad al texto */
+        }
+
+        .final-photo-text {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: #ffffff;
             font-family: 'Caveat', cursive;
-            font-size: 2rem;
+            font-size: 3.2rem;
+            font-weight: 600;
+            text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.85);
+            width: 90%;
+            line-height: 1.2;
         }
 
         /* Responsive para celulares y pantallas pequeñas */
@@ -197,7 +229,7 @@
                 flex-direction: column;
             }
             .binding-rings {
-                display: none; /* Oculta espiral en vista vertical */
+                display: none;
             }
             .page-left {
                 border-radius: 12px 12px 0 0;
@@ -212,14 +244,17 @@
             .page-left::after, .page-right::before {
                 display: none;
             }
+            .final-photo-text {
+                font-size: 2.3rem;
+            }
         }
     </style>
 </head>
 <body>
 
     <header>
-        <h1>Te quiero, hija</h1>
-        <p>Un pequeño rincón dedicado a ti, para recordarte lo especial que eres en mi vida y lo orgulloso/a que estoy de ti cada día.</p>
+        <h1>Nuestra Historia Recorriendo el Camino</h1>
+        <p>Un pequeño álbum para recordar cada momento a tu lado y celebrar lo especial que eres para mí.</p>
     </header>
 
     <div class="book-wrapper">
@@ -248,43 +283,43 @@
             <div class="page page-left">
                 <div class="photo-grid">
                     <div class="photo-item">
-                        <img src="https://images.unsplash.com/photo-1516627145497-ae6968895b74?w=500" alt="Foto 1">
+                        <img src="https://i.imgur.com/MBkKzQ2.jpeg" alt="Foto 1">
                         <div class="caption">Momento especial 1</div>
                     </div>
                     <div class="photo-item">
-                        <img src="https://images.unsplash.com/photo-1543332164-6e82f355badc?w=500" alt="Foto 2">
+                        <img src="https://i.imgur.com/MBkKzQ2.jpeg" alt="Foto 2">
                         <div class="caption">Sonrisas inolvidables</div>
                     </div>
                     <div class="photo-item">
-                        <img src="https://images.unsplash.com/photo-1492562080023-ab3db95bfbce?w=500" alt="Foto 3">
+                        <img src="https://i.imgur.com/MBkKzQ2.jpeg" alt="Foto 3">
                         <div class="caption">Siempre juntos</div>
                     </div>
                     <div class="photo-item">
-                        <img src="https://images.unsplash.com/photo-1502086223501-7ea6ecd79368?w=500" alt="Foto 4">
+                        <img src="https://i.imgur.com/MBkKzQ2.jpeg" alt="Foto 4">
                         <div class="caption">Tu alegría</div>
                     </div>
                     <div class="photo-item">
-                        <img src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?w=500" alt="Foto 5">
+                        <img src="https://i.imgur.com/MBkKzQ2.jpeg" alt="Foto 5">
                         <div class="caption">Recuerdos bonitos</div>
                     </div>
                     <div class="photo-item">
-                        <img src="https://images.unsplash.com/photo-1517841905240-472988babdf9?w=500" alt="Foto 6">
+                        <img src="https://i.imgur.com/MBkKzQ2.jpeg" alt="Foto 6">
                         <div class="caption">Creciendo juntos</div>
                     </div>
                     <div class="photo-item">
-                        <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=500" alt="Foto 7">
+                        <img src="https://i.imgur.com/MBkKzQ2.jpeg" alt="Foto 7">
                         <div class="caption">Tu luz</div>
                     </div>
                     <div class="photo-item">
-                        <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=500" alt="Foto 8">
+                        <img src="https://i.imgur.com/MBkKzQ2.jpeg" alt="Foto 8">
                         <div class="caption">Un día genial</div>
                     </div>
                     <div class="photo-item">
-                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=500" alt="Foto 9">
+                        <img src="https://i.imgur.com/MBkKzQ2.jpeg" alt="Foto 9">
                         <div class="caption">Tu felicidad</div>
                     </div>
                     <div class="photo-item">
-                        <img src="https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?w=500" alt="Foto 10">
+                        <img src="https://i.imgur.com/MBkKzQ2.jpeg" alt="Foto 10">
                         <div class="caption">Hermosos momentos</div>
                     </div>
                 </div>
@@ -294,43 +329,43 @@
             <div class="page page-right">
                 <div class="photo-grid">
                     <div class="photo-item">
-                        <img src="https://images.unsplash.com/photo-1488426862026-3ee34a7d66df?w=500" alt="Foto 11">
+                        <img src="https://i.imgur.com/MBkKzQ2.jpeg" alt="Foto 11">
                         <div class="caption">Siempre en mi corazón</div>
                     </div>
                     <div class="photo-item">
-                        <img src="https://images.unsplash.com/photo-1517486808906-6ca8b3f04846?w=500" alt="Foto 12">
+                        <img src="https://i.imgur.com/MBkKzQ2.jpeg" alt="Foto 12">
                         <div class="caption">Grandes aventuras</div>
                     </div>
                     <div class="photo-item">
-                        <img src="https://images.unsplash.com/photo-1522075469751-3a6694fb2f61?w=500" alt="Foto 13">
+                        <img src="https://i.imgur.com/MBkKzQ2.jpeg" alt="Foto 13">
                         <div class="caption">Tu dulzura</div>
                     </div>
                     <div class="photo-item">
-                        <img src="https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?w=500" alt="Foto 14">
+                        <img src="https://i.imgur.com/MBkKzQ2.jpeg" alt="Foto 14">
                         <div class="caption">Infinitas risas</div>
                     </div>
                     <div class="photo-item">
-                        <img src="https://images.unsplash.com/photo-1501196354995-cbb51c65aaea?w=500" alt="Foto 15">
+                        <img src="https://i.imgur.com/MBkKzQ2.jpeg" alt="Foto 15">
                         <div class="caption">Paseos inolvidables</div>
                     </div>
                     <div class="photo-item">
-                        <img src="https://images.unsplash.com/photo-1491438590914-bc09fcaaf77a?w=500" alt="Foto 16">
-                        <div class="caption">Mi mayor orgullo</div>
+                        <img src="https://i.imgur.com/MBkKzQ2.jpeg" alt="Foto 16">
+                        <div class="caption">Mi lugar favorito</div>
                     </div>
                     <div class="photo-item">
-                        <img src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=500" alt="Foto 17">
+                        <img src="https://i.imgur.com/MBkKzQ2.jpeg" alt="Foto 17">
                         <div class="caption">Momentos mágicos</div>
                     </div>
                     <div class="photo-item">
-                        <img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=500" alt="Foto 18">
+                        <img src="https://i.imgur.com/MBkKzQ2.jpeg" alt="Foto 18">
                         <div class="caption">Amor incondicional</div>
                     </div>
                     <div class="photo-item">
-                        <img src="https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?w=500" alt="Foto 19">
+                        <img src="https://i.imgur.com/MBkKzQ2.jpeg" alt="Foto 19">
                         <div class="caption">Tu linda sonrisa</div>
                     </div>
                     <div class="photo-item">
-                        <img src="https://images.unsplash.com/photo-1524250502761-1ac6f2e30d43?w=500" alt="Foto 20">
+                        <img src="https://i.imgur.com/MBkKzQ2.jpeg" alt="Foto 20">
                         <div class="caption">Por siempre juntos</div>
                     </div>
                 </div>
@@ -339,8 +374,12 @@
         </div>
     </div>
 
+    <!-- Imagen final con el texto superpuesto -->
     <footer>
-        <p>Con todo mi amor, hoy y siempre. ❤️</p>
+        <div class="final-photo-container">
+            <img src="https://i.imgur.com/MBkKzQ2.jpeg" alt="Propuesta final">
+            <div class="final-photo-text">¿Quieres ser mi novia? ❤️</div>
+        </div>
     </footer>
 
 </body>
