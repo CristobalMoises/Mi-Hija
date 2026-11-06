@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>¿Quieres ser mi novia? - Mi Álbum de Recuerdos</title>
-    <!-- Fuentes para títulos y notas manuscritas -->
     <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600&family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
     
     <style>
@@ -16,7 +15,6 @@
 
         body {
             font-family: 'Montserrat', sans-serif;
-            /* Fondo simulando la mesa de madera */
             background: radial-gradient(circle, #e2cca6 0%, #ba986e 100%),
                         repeating-linear-gradient(0deg, transparent, transparent 10px, rgba(0,0,0,0.03) 10px, rgba(0,0,0,0.03) 20px);
             background-blend-mode: multiply;
@@ -25,7 +23,6 @@
             min-height: 100vh;
         }
 
-        /* Encabezado fuera del álbum */
         header {
             text-align: center;
             margin-bottom: 30px;
@@ -47,7 +44,6 @@
             font-style: italic;
         }
 
-        /* Estructura del Libro / Libreta con Espiral */
         .book-wrapper {
             max-width: 1200px;
             margin: 0 auto;
@@ -62,10 +58,9 @@
             border-radius: 12px;
         }
 
-        /* Páginas izquierda y derecha */
         .page {
             flex: 1;
-            background-color: #fffdf9; /* Tono papel marfil */
+            background-color: #fffdf9;
             padding: 40px 30px;
             min-height: 450px;
             position: relative;
@@ -87,7 +82,6 @@
             padding-left: 45px;
         }
 
-        /* Espiral metálico central (Engargolado) */
         .binding-rings {
             position: absolute;
             left: 50%;
@@ -108,7 +102,6 @@
             position: relative;
         }
 
-        /* Anillos dobles de metal */
         .ring::before, .ring::after {
             content: '';
             position: absolute;
@@ -122,7 +115,6 @@
         .ring::before { top: 0; }
         .ring::after { bottom: 0; }
 
-        /* Agujeros del papel para el espiral */
         .page-left::after, .page-right::before {
             content: '';
             position: absolute;
@@ -137,14 +129,12 @@
         .page-left::after { right: 8px; }
         .page-right::before { left: 8px; }
 
-        /* Cuadrícula interna de fotos en el libro */
         .photo-grid {
             display: grid;
             grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
             gap: 25px;
         }
 
-        /* Tarjeta de foto tipo mini-álbum */
         .photo-item {
             background-color: #ffffff;
             padding: 10px 10px 14px 10px;
@@ -161,7 +151,6 @@
             z-index: 5;
         }
 
-        /* Ligeras inclinaciones naturales */
         .photo-item:nth-child(3n+1) { transform: rotate(-2deg); }
         .photo-item:nth-child(3n+2) { transform: rotate(1.5deg); }
         .photo-item:nth-child(3n) { transform: rotate(-1deg); }
@@ -182,7 +171,6 @@
             line-height: 1.1;
         }
 
-        /* Pie de página con imagen final y texto superpuesto */
         footer {
             text-align: center;
             padding: 50px 20px 20px;
@@ -206,7 +194,7 @@
             width: 100%;
             height: auto;
             display: block;
-            filter: brightness(0.65); /* Oscurece ligeramente la imagen para dar legibilidad al texto */
+            filter: brightness(0.65);
         }
 
         .final-photo-text {
@@ -223,30 +211,13 @@
             line-height: 1.2;
         }
 
-        /* Responsive para celulares y pantallas pequeñas */
         @media (max-width: 850px) {
-            .notebook {
-                flex-direction: column;
-            }
-            .binding-rings {
-                display: none;
-            }
-            .page-left {
-                border-radius: 12px 12px 0 0;
-                border-right: none;
-                padding-right: 20px;
-            }
-            .page-right {
-                border-radius: 0 0 12px 12px;
-                border-left: none;
-                padding-left: 20px;
-            }
-            .page-left::after, .page-right::before {
-                display: none;
-            }
-            .final-photo-text {
-                font-size: 2.3rem;
-            }
+            .notebook { flex-direction: column; }
+            .binding-rings { display: none; }
+            .page-left { border-radius: 12px 12px 0 0; border-right: none; padding-right: 20px; }
+            .page-right { border-radius: 0 0 12px 12px; border-left: none; padding-left: 20px; }
+            .page-left::after, .page-right::before { display: none; }
+            .final-photo-text { font-size: 2.3rem; }
         }
     </style>
 </head>
@@ -260,7 +231,6 @@
     <div class="book-wrapper">
         <div class="notebook">
             
-            <!-- Anillos de Espiral Central -->
             <div class="binding-rings">
                 <div class="ring"></div>
                 <div class="ring"></div>
@@ -274,70 +244,47 @@
                 <div class="ring"></div>
             </div>
 
-            <!-- Página Izquierda del Libro -->
+            <!-- Página Izquierda -->
             <div class="page page-left">
                 <div class="photo-grid">
+                    <!-- Coloca aquí tus enlaces directos a imagen (ejemplo: https://i.imgur.com/NOMBRE.jpg) -->
                     <div class="photo-item">
-                        <img src="https://i.imgur.com/MBkKzQ2.jpeg" alt="Foto 1">
+                        <img src="TU_ENLACE_DIRECTO_1.jpg" alt="Foto 1">
                         <div class="caption">Primeros momentos</div>
                     </div>
                     <div class="photo-item">
-                        <img src="https://i.imgur.com/3N4o81h.jpeg" alt="Foto 2">
+                        <img src="TU_ENLACE_DIRECTO_2.jpg" alt="Foto 2">
                         <div class="caption">Sonrisas compartidas</div>
                     </div>
                     <div class="photo-item">
-                        <img src="https://i.imgur.com/v8R2lHq.jpeg" alt="Foto 3">
+                        <img src="TU_ENLACE_DIRECTO_3.jpg" alt="Foto 3">
                         <div class="caption">Un día inolvidable</div>
                     </div>
                     <div class="photo-item">
-                        <img src="https://i.imgur.com/K8J7PjM.jpeg" alt="Foto 4">
+                        <img src="TU_ENLACE_DIRECTO_4.jpg" alt="Foto 4">
                         <div class="caption">Juntos siempre</div>
-                    </div>
-                    <div class="photo-item">
-                        <img src="https://i.imgur.com/ZQnAsLs.jpeg" alt="Foto 5">
-                        <div class="caption">Nuestras locuras</div>
-                    </div>
-                    <div class="photo-item">
-                        <img src="https://i.imgur.com/kSu6GzV.jpeg" alt="Foto 6">
-                        <div class="caption">Cada instante vale</div>
                     </div>
                 </div>
             </div>
 
-            <!-- Página Derecha del Libro -->
+            <!-- Página Derecha -->
             <div class="page page-right">
                 <div class="photo-grid">
                     <div class="photo-item">
-                        <img src="https://i.imgur.com/Uxzi5t3.jpeg" alt="Foto 7">
-                        <div class="caption">Miradas complicidad</div>
+                        <img src="TU_ENLACE_DIRECTO_5.jpg" alt="Foto 5">
+                        <div class="caption">Nuestras locuras</div>
                     </div>
                     <div class="photo-item">
-                        <img src="https://i.imgur.com/sEcrp6d.jpeg" alt="Foto 8">
+                        <img src="TU_ENLACE_DIRECTO_6.jpg" alt="Foto 6">
+                        <div class="caption">Cada instante vale</div>
+                    </div>
+                    <div class="photo-item">
+                        <img src="TU_ENLACE_DIRECTO_7.jpg" alt="Foto 7">
+                        <div class="caption">Miradas de complicidad</div>
+                    </div>
+                    <div class="photo-item">
+                        <img src="TU_ENLACE_DIRECTO_8.jpg" alt="Foto 8">
                         <div class="caption">Momentos especiales</div>
-                    </div>
-                    <div class="photo-item">
-                        <img src="https://i.imgur.com/wqbYuk0.jpeg" alt="Foto 9">
-                        <div class="caption">Aventuras a tu lado</div>
-                    </div>
-                    <div class="photo-item">
-                        <img src="https://i.imgur.com/uTZjzmu.jpeg" alt="Foto 10">
-                        <div class="caption">Recuerdos bonitos</div>
-                    </div>
-                    <div class="photo-item">
-                        <img src="https://i.imgur.com/ZZFTNcV.jpeg" alt="Foto 11">
-                        <div class="caption">Mi persona favorita</div>
-                    </div>
-                    <div class="photo-item">
-                        <img src="https://i.imgur.com/oNoj5i6.jpeg" alt="Foto 12">
-                        <div class="caption">Creando historia</div>
-                    </div>
-                    <div class="photo-item">
-                        <img src="https://i.imgur.com/zbNhKLw.jpeg" alt="Foto 13">
-                        <div class="caption">Siempre en mi mente</div>
-                    </div>
-                    <div class="photo-item">
-                        <img src="https://i.imgur.com/5ZfOm75.jpeg" alt="Foto 14">
-                        <div class="caption">Lo mejor está por venir</div>
                     </div>
                 </div>
             </div>
@@ -345,10 +292,10 @@
         </div>
     </div>
 
-    <!-- Imagen final de los aguacates con el texto superpuesto -->
+    <!-- Foto final de los aguacates -->
     <footer>
         <div class="final-photo-container">
-            <img src="https://i.imgur.com/9t4S8sH.jpeg" alt="Propuesta final con aguacates">
+            <img src="TU_ENLACE_DIRECTO_AGUACATES.jpg" alt="Propuesta final con aguacates">
             <div class="final-photo-text">¿Quieres ser mi novia? ❤️</div>
         </div>
     </footer>
