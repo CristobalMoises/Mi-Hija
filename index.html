@@ -67,7 +67,7 @@
             flex: 1;
             background-color: #fffdf9; /* Tono papel marfil */
             padding: 40px 30px;
-            min-height: 600px;
+            min-height: 450px;
             position: relative;
             background-image: linear-gradient(#f4ebd9 1px, transparent 1px);
             background-size: 100% 32px;
@@ -140,14 +140,14 @@
         /* Cuadrícula interna de fotos en el libro */
         .photo-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
-            gap: 20px;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 25px;
         }
 
         /* Tarjeta de foto tipo mini-álbum */
         .photo-item {
             background-color: #ffffff;
-            padding: 8px 8px 12px 8px;
+            padding: 10px 10px 14px 10px;
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
             border: 1px solid #eae6df;
             border-radius: 3px;
@@ -162,21 +162,21 @@
         }
 
         /* Ligeras inclinaciones naturales */
-        .photo-item:nth-child(3n+1) { transform: rotate(-1.5deg); }
-        .photo-item:nth-child(3n+2) { transform: rotate(1deg); }
-        .photo-item:nth-child(3n) { transform: rotate(-0.5deg); }
+        .photo-item:nth-child(3n+1) { transform: rotate(-2deg); }
+        .photo-item:nth-child(3n+2) { transform: rotate(1.5deg); }
+        .photo-item:nth-child(3n) { transform: rotate(-1deg); }
 
         .photo-item img {
             width: 100%;
-            height: 160px;
+            height: 180px;
             object-fit: cover;
             border-radius: 2px;
             display: block;
         }
 
         .photo-item .caption {
-            margin-top: 8px;
-            font-size: 1.25rem;
+            margin-top: 10px;
+            font-size: 1.35rem;
             color: #3b3331;
             font-family: 'Caveat', cursive;
             line-height: 1.1;
@@ -272,11 +272,6 @@
                 <div class="ring"></div>
                 <div class="ring"></div>
                 <div class="ring"></div>
-                <div class="ring"></div>
-                <div class="ring"></div>
-                <div class="ring"></div>
-                <div class="ring"></div>
-                <div class="ring"></div>
             </div>
 
             <!-- Página Izquierda del Libro -->
@@ -284,43 +279,27 @@
                 <div class="photo-grid">
                     <div class="photo-item">
                         <img src="https://i.imgur.com/MBkKzQ2.jpeg" alt="Foto 1">
-                        <div class="caption">Momento especial 1</div>
+                        <div class="caption">Primeros momentos</div>
                     </div>
                     <div class="photo-item">
-                        <img src="https://i.imgur.com/MBkKzQ2.jpeg" alt="Foto 2">
-                        <div class="caption">Sonrisas inolvidables</div>
+                        <img src="https://i.imgur.com/3N4o81h.jpeg" alt="Foto 2">
+                        <div class="caption">Sonrisas compartidas</div>
                     </div>
                     <div class="photo-item">
-                        <img src="https://i.imgur.com/MBkKzQ2.jpeg" alt="Foto 3">
-                        <div class="caption">Siempre juntos</div>
+                        <img src="https://i.imgur.com/v8R2lHq.jpeg" alt="Foto 3">
+                        <div class="caption">Un día inolvidable</div>
                     </div>
                     <div class="photo-item">
-                        <img src="https://i.imgur.com/MBkKzQ2.jpeg" alt="Foto 4">
-                        <div class="caption">Tu alegría</div>
+                        <img src="https://i.imgur.com/K8J7PjM.jpeg" alt="Foto 4">
+                        <div class="caption">Juntos siempre</div>
                     </div>
                     <div class="photo-item">
-                        <img src="https://i.imgur.com/MBkKzQ2.jpeg" alt="Foto 5">
-                        <div class="caption">Recuerdos bonitos</div>
+                        <img src="https://i.imgur.com/ZQnAsLs.jpeg" alt="Foto 5">
+                        <div class="caption">Nuestras locuras</div>
                     </div>
                     <div class="photo-item">
-                        <img src="https://i.imgur.com/MBkKzQ2.jpeg" alt="Foto 6">
-                        <div class="caption">Creciendo juntos</div>
-                    </div>
-                    <div class="photo-item">
-                        <img src="https://i.imgur.com/MBkKzQ2.jpeg" alt="Foto 7">
-                        <div class="caption">Tu luz</div>
-                    </div>
-                    <div class="photo-item">
-                        <img src="https://i.imgur.com/MBkKzQ2.jpeg" alt="Foto 8">
-                        <div class="caption">Un día genial</div>
-                    </div>
-                    <div class="photo-item">
-                        <img src="https://i.imgur.com/MBkKzQ2.jpeg" alt="Foto 9">
-                        <div class="caption">Tu felicidad</div>
-                    </div>
-                    <div class="photo-item">
-                        <img src="https://i.imgur.com/MBkKzQ2.jpeg" alt="Foto 10">
-                        <div class="caption">Hermosos momentos</div>
+                        <img src="https://i.imgur.com/kSu6GzV.jpeg" alt="Foto 6">
+                        <div class="caption">Cada instante vale</div>
                     </div>
                 </div>
             </div>
@@ -329,58 +308,17 @@
             <div class="page page-right">
                 <div class="photo-grid">
                     <div class="photo-item">
-                        <img src="https://i.imgur.com/MBkKzQ2.jpeg" alt="Foto 11">
-                        <div class="caption">Siempre en mi corazón</div>
+                        <img src="https://i.imgur.com/Uxzi5t3.jpeg" alt="Foto 7">
+                        <div class="caption">Miradas complicidad</div>
                     </div>
                     <div class="photo-item">
-                        <img src="https://i.imgur.com/MBkKzQ2.jpeg" alt="Foto 12">
-                        <div class="caption">Grandes aventuras</div>
+                        <img src="https://i.imgur.com/wqbYuk0.jpeg" alt="Foto 8">
+                        <div class="caption">Aventuras a tu lado</div>
                     </div>
                     <div class="photo-item">
-                        <img src="https://i.imgur.com/MBkKzQ2.jpeg" alt="Foto 13">
-                        <div class="caption">Tu dulzura</div>
+                        <img src="https://i.imgur.com/uTZjzmu.jpeg" alt="Foto 9">
+                        <div class="caption">Recuerdos bonitos</div>
                     </div>
                     <div class="photo-item">
-                        <img src="https://i.imgur.com/MBkKzQ2.jpeg" alt="Foto 14">
-                        <div class="caption">Infinitas risas</div>
-                    </div>
-                    <div class="photo-item">
-                        <img src="https://i.imgur.com/MBkKzQ2.jpeg" alt="Foto 15">
-                        <div class="caption">Paseos inolvidables</div>
-                    </div>
-                    <div class="photo-item">
-                        <img src="https://i.imgur.com/MBkKzQ2.jpeg" alt="Foto 16">
-                        <div class="caption">Mi lugar favorito</div>
-                    </div>
-                    <div class="photo-item">
-                        <img src="https://i.imgur.com/MBkKzQ2.jpeg" alt="Foto 17">
-                        <div class="caption">Momentos mágicos</div>
-                    </div>
-                    <div class="photo-item">
-                        <img src="https://i.imgur.com/MBkKzQ2.jpeg" alt="Foto 18">
-                        <div class="caption">Amor incondicional</div>
-                    </div>
-                    <div class="photo-item">
-                        <img src="https://i.imgur.com/MBkKzQ2.jpeg" alt="Foto 19">
-                        <div class="caption">Tu linda sonrisa</div>
-                    </div>
-                    <div class="photo-item">
-                        <img src="https://i.imgur.com/MBkKzQ2.jpeg" alt="Foto 20">
-                        <div class="caption">Por siempre juntos</div>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-    </div>
-
-    <!-- Imagen final con el texto superpuesto -->
-    <footer>
-        <div class="final-photo-container">
-            <img src="https://i.imgur.com/MBkKzQ2.jpeg" alt="Propuesta final">
-            <div class="final-photo-text">¿Quieres ser mi novia? ❤️</div>
-        </div>
-    </footer>
-
-</body>
-</html>
+                        <img src="https://i.imgur.com/ZZFTNcV.jpeg" alt="Foto 10">
+                        <div
